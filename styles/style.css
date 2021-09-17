@@ -192,6 +192,7 @@ section {
 }
 
 .container {
+
     max-width: 1100px;
     padding: 0 40px 0 200px;
     margin: 30px auto 0;
@@ -312,7 +313,6 @@ aside {
     position: fixed;
     visibility: hidden;
     top: 0;
-    left: 100%;
     width: 170px;
     height: 100%;
     margin: 0;
@@ -321,6 +321,7 @@ aside {
     text-align: center;
     background-color: #ECEFF1;
     box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+    overflow: scroll;
 }
 
 .menu__item {
@@ -332,7 +333,9 @@ aside {
     font-weight: 600;
     text-decoration: none;
 }
-
+.menu__box li:nth-child(8) {
+    padding-bottom: 100px;
+}
 .menu__item:hover {
     background-color: #CFD8DC;
 }
