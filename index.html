@@ -5,123 +5,283 @@
     <title>CV</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="styles/prism.css" rel="stylesheet"/>
 </head>
 <body>
-<header>
-    <h1><span class="name">Aglaya</span> <span class="surname">Stunkus</span></h1>
-    <p>Front-end developer</p>
-    <div class="logo"></div>
+<header class="container">
+    <div class="info">
+        <h1><span class="name">Aglaya</span> <br> <span class="surname">Stunkus</span></h1>
+        <h2 class="profession">Junior Front-end Developer</h2>
+        <ul class="contacts">
+            <li class="phone">+375 (29) 655-80-05</li>
+            <li class="email">aglayastunkus1@gmail.com</li>
+            <li class="github"><a href="https://github.com/aglayastunkus" target="_blank">GitHub account</a></li>
+        </ul>
+    </div>
+    <figure class="photo">
+        <img src="img/photo.jpg"
+             alt="My photo">
+    </figure>
+    <nav class="menu">
+        <input id="menu__toggle" type="checkbox"/>
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#profile">Profile</a></li>
+            <li><a class="menu__item" href="#education">Education</a></li>
+            <li><a class="menu__item" href="#experience">Experience</a></li>
+            <li><a class="menu__item" href="#skills">Skills</a></li>
+            <li><a class="menu__item" href="#code">Code Examples</a></li>
+            <li><a class="menu__item" href="#work">Works</a></li>
+            <li><a class="menu__item" href="#video">Video</a></li>
+            <li><a class="menu__item" href="#languages">Languages</a></li>
+        </ul>
+    </nav>
 </header>
-<main>
-    <section class="experience">
-        <img class="experience-header_icon" alt="" src="https://img.icons8.com/ios-glyphs/30/000000/briefcase.png"/>
-        <h2 class="experience-header">Experience</h2>
-        <ul class="experience-list">
+<main class="container">
+    <div class="container-main-first">
+        <aside>
+            <section class="profile" id="profile">
+                <h3 class="profile-header">Profile</h3>
+                <p class="profile-description">Мy goal for the next year is to master the necessary skills of a junior
+                    front-end
+                    developer and successfully interview for this position in a good company. My strengths are
+                    perseverance,
+                    positive thinking, constant desire to learn new skills and abilities. I love to work in a team and I
+                    can
+                    solve
+                    conflict situations in a positive way.</p>
+            </section>
+            <section class="languages" id="languages">
+                <h3 class="languages-header">Languages</h3>
+                <ul class="languages-list">
+                    <li>English A2+</li>
+                </ul>
+            </section>
+            <section class="skills" id="skills">
+                <h3 class="skills-header">Technical Skills</h3>
+                <ul class="skills-list">
+                    <li class="skills-item">HTML5</li>
+                    <li class="skills-item">CSS3</li>
+                    <li class="skills-item">JS</li>
+                    <li class="skills-item">React</li>
+                    <li class="skills-item">Redux</li>
+                    <li class="skills-item">Git</li>
+                </ul>
+            </section>
+            <section class="courses">
+                <h3 class="courses-header">Online Courses</h3>
+                <ul class="courses-list">
+                    <li class="courses-item">RSS</li>
+                    <li class="courses-item">CS50</li>
+                    <li class="courses-item">Coursera</li>
+                    <li class="courses-item">MDN Online Tutorials</li>
+                    <li class="courses-item">Ets...</li>
+                </ul>
+            </section>
+        </aside>
+        <div class="container-main-second">
+            <section class="education" id="education">
+                <h3 class="education-header">Education</h3>
+                <ul class="education-list">
 
-            <li class="experience-item">
-                <div class="experience-item_year">2002-2003</div>
-                <h3 class="experience-item_company">BSU</h3>
-                <p class="experience-item_position">Electronics Engineer of Communications Department in Information
-                    Technologies Center</p>
-                <p class="experience-item_description">Ensuring uninterrupted operation of telecommunication
-                    equipment</p>
+                    <li class="education-item">
+                        <h4 class="education-item_year">1999-2002</h4>
+                        <div>
+                            <h4 class="education-item_speciality">High College of communication</h4>
+                            <h5 class="education-item_institution">Engineer of telecommunication systems</h5>
+                            <p class="education-item_description">Design and construction of information networks.
+                                Installation
+                                and
+                                operation of telecommunication equipment, quality assurance of provided communication
+                                services.</p>
+                        </div>
+                    </li>
+
+                    <li class="education-item">
+                        <h4 class="education-item_year">2002-2004</h4>
+                        <div>
+                            <h4 class="education-item_speciality">Faculty of Retraining of the State Linguistic
+                                University</h4>
+                            <h5 class="education-item_institution">English Language</h5>
+                            <p class="education-item_description">Graduated from two-year English courses with a
+                                diploma.</p>
+                        </div>
+                    </li>
+
+                    <li class="education-item">
+                        <h4 class="education-item_year">2018-2021</h4>
+                        <div>
+                            <h4 class="education-item_speciality">Online Courses</h4>
+                            <p class="education-item_institution">RSS, CS50, Coursera, MDN Online Tutorials ets.</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="experience" id="experience">
+
+                <h3 class="experience-header">Experience</h3>
+                <ul class="experience-list">
+
+                    <li class="experience-item">
+                        <h4 class="experience-item_year">2002-2003</h4>
+                        <div>
+                            <h4 class="experience-item_company">Belarusian State University</h4>
+                            <h5 class="experience-item_position">Electronics Engineer of Communications Department in
+                                Information
+                                Technologies Center</h5>
+                            <p class="experience-item_description">Ensuring uninterrupted operation of telecommunication
+                                equipment</p>
+                        </div>
+                    </li>
+
+                    <li class="experience-item">
+                        <h4 class="experience-item_year">2003-2007</h4>
+                        <div>
+                            <h4 class="experience-item_company">Individual Entrepreneur</h4>
+                            <h5 class="experience-item_position">Leading Specialist</h5>
+                            <p class="experience-item_description">Assembly, setup, sale, and delivery of computer
+                                equipment</p>
+                        </div>
+                    </li>
+
+                    <li class="experience-item">
+                        <h4 class="experience-item_year">2007-2013</h4>
+                        <div>
+                            <h4 class="experience-item_company">Unitary Enterprise "Sion Computers"</h4>
+                            <h5 class="experience-item_position">Commercial Director and Engineer </h5>
+                            <p class="experience-item_description">Development of the commercial strategy of the
+                                enterprise.
+                                Operational control of sales managers.</p>
+                        </div>
+                    </li>
+
+                    <li class="experience-item">
+                        <h4 class="experience-item_year">2019-2021</h4>
+                        <div>
+                            <h4 class="experience-item_company">Freelance</h4>
+                            <h5 class="experience-item_position">Computer science school program tutor</h5>
+                            <p class="experience-item_description">Teaching computer science in grades 6-9 of secondary
+                                schools</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+    <section class="code" id="code">
+        <h3 class="code-header">Code examples</h3>
+        <ul class="code-list">
+            <li class="code-item">
+                <h4 class="code-item_title">Arrays and Strings</h4>
+                <p class="code-item_description"></p>
+                <pre><code id="code-text" class="language-js">function revrot(str, size) {
+    if (size < 1 || size > str.length)
+        return '';
+
+    let reverse = s => s.split('').reverse().join('');
+    let rotate = s => s.slice(1) + s.slice(0, 1);
+    let sumCubes = c => c.split('').reduce((a, b) => a + (+b) ** 3, 0);
+
+    return str
+        .match(new RegExp('.{' + size + '}', 'g'))
+        .map(c => sumCubes(c) % 2 ? rotate(c) : reverse(c))
+        .join('');
+}</code></pre>
             </li>
+            <li class="code-item">
+                <h4 class="code-item_title">Guessing Game Class </h4>
+                <p class="code-item_description"></p>
+                <pre><code class="language-js">class GuessingGame {
+    constructor() {
+        this.range = [];
+        this.low = 0;
+        this.high = 0;
+        this.mid = 0;
+        this.number = number;
+    }
+    setRange(min, max) {
+        this.range = Array.from({length: max - min + 1}, (v, k) => k);
+        this.low = min;
+        this.high = max;
+    }
+    guess() {
+        this.mid = Math.round((this.low + this.high) / 2);
+        let guess = this.range[this.mid];
 
-            <li class="experience-item">
-                <div class="experience-item_year">2003-2007</div>
-                <h3 class="experience-item_company">Individual Entrepreneur</h3>
-                <p class="experience-item_position">Leading Specialist</p>
-                <p class="experience-item_description">Assembly, setup, sale, and delivery of computer equipment</p>
-            </li>
-
-            <li class="experience-item">
-                <div class="experience-item_year">2007-2013</div>
-                <h3 class="experience-item_company">Unitary Enterprise "SionComputers"</h3>
-                <p class="experience-item_position">Commercial Director and Engineer </p>
-                <p class="experience-item_description">Development of the commercial strategy of the enterprise. Operational control of sales managers.</p>
-            </li>
-
-            <li class="experience-item">
-                <div class="experience-item_year">2019-2021</div>
-                <h3 class="experience-item_company">Freelance</h3>
-                <p class="experience-item_position">Computer science school program tutor</p>
-                <p class="experience-item_description">Teaching computer science in grades 6-9 of secondary schools</p>
+        if (guess === this.number) {
+            return guess;
+        }
+        if (guess > this.number) {
+            this.greater();
+            return guess;
+        } else {
+            this.lower();
+            return guess;
+        }
+    }
+    lower() {
+        this.low = this.mid + 1;
+    }
+    greater() {
+        this.high = this.mid - 1;
+    }
+}</code></pre>
             </li>
         </ul>
     </section>
+    <section class="work" id="work">
+        <h3 class="work-header">Work examples</h3>
+        <ul class="work-list">
+            <li class="work-item">
+                <h4 class="experience-item_title">Custom Video Player</h4>
+                <p class="experience-item_description">Fully custom styling and implementation of video player
+                    functions. Used technology stack HTML, CSS and JS</p>
+                <a target="_blank"
+                   href="https://rolling-scopes-school.github.io/aglayastunkus-JSFEPRESCHOOL/custom-video-player/">
+                    <img src="img/player.jpg" alt=""/>
+                </a>
 
-    <section class="education">
-        <img class="education-header_icon" alt=""
-             src="https://img.icons8.com/ios-glyphs/30/000000/flying-motarboard.png"/>
-        <h2 class="education-header">Education</h2>
-        <ul class="education-list">
+            </li>
+            <li class="work-item">
+                <h4 class="experience-item_title">Drum Kit</h4>
+                <p class="experience-item_description"> A fun mini web application that demonstrates event handlers on
+                    elements in an HTML document. Used technology stack HTML, CSS and JS</p>
+                <a target="_blank" href="https://rolling-scopes-school.github.io/aglayastunkus-JSFEPRESCHOOL/drum-kit/">
+                    <img src="img/drum.jpg" alt=""/>
+                </a>
 
-            <li class="education-item">
-                <div class="education-item_year">1999-2002</div>
-                <h3 class="education-item_speciality">Engineer of telecommunication systems</h3>
-                <p class="education-item_institution">High College of communication</p>
-                <p class="education-item_description">Design and construction of information networks. Installation and
-                    operation of telecommunication equipment, quality assurance of provided communication services.</p>
             </li>
 
-            <li class="education-item">
-                <div class="education-item_year">2002-2004</div>
-                <h3 class="education-item_speciality">English Language</h3>
-                <p class="education-item_institution">Faculty of Retraining of the State Linguistic University</p>
-                <p class="education-item_description">Graduated from two-year English courses with a diploma.</p>
-            </li>
-
-            <li class="education-item">
-                <div class="education-item_year">2018-2021</div>
-                <h3 class="education-item_speciality">Online Courses</h3>
-                <p class="education-item_institution">RSS, CS50, Coursera, MDN Online Tutorials ets.</p>
-            </li>
         </ul>
-
     </section>
-
-    <aside>
-        <section class="about">
-            <h2 class="about-header">About Me</h2>
-            <p class="about-description">Мy goal for the next year is to master the necessary skills of a junior
-                front-end
-                developer and successfully interview for this position in a good company. My strengths are perseverance,
-                positive thinking, constant desire to learn new skills and abilities. I love to work in a team and I can
-                solve
-                conflict situations in a positive way.</p>
-        </section>
-
-        <section class="contacts">
-            <h2 class="contacts-header">Contacts</h2>
-            <ul class="contacts-list">
-                <li class="contacts-item">
-                    <img alt="" class="contacts-item_icon"
-                         src="https://img.icons8.com/material-rounded/24/000000/mail.png"/>
-                    <p class="contact-item_information">aglayastunkus1@gmail.com</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="skills">
-            <h2 class="skills-header">Technical Skills</h2>
-            <ul class="skills-list">
-                <li class="skills-item">HTML5</li>
-                <li class="skills-item">CSS3</li>
-                <li class="skills-item">JS</li>
-                <li class="skills-item">React</li>
-                <li class="skills-item">Redux</li>
-                <li class="skills-item">Git</li>
-            </ul>
-        </section>
-
-    </aside>
+    <section class="video" id="video">
+        <h3 class="video-header">Video CV</h3>
+    </section>
 </main>
 
-<footer>
-    <a href="https://github.com/aglayastunkus" target="_blank">My gitHub account</a>
-    <a href="https://rs.school/js/" target="_blank"><img src="svg/rs_school_logo.svg"></a>
+<footer class="container">
+    <ul class="footer-list">
+        <li>©&nbsp;2021&nbsp; Aglaya Stunkus</li>
+        <li><a href="https://github.com/aglayastunkus" target="_blank">GitHub</a></li>
+        <li><a class="rs-logo" href="https://rs.school/js/" target="_blank"><img src="svg/rs_school_logo.svg"
+                                                                                 alt=""></a></li>
+    </ul>
+
+
 </footer>
+<script src="js/prism.js"></script>
 
 </body>
 </html>
