@@ -321,7 +321,7 @@ aside {
     text-align: center;
     background-color: #ECEFF1;
     box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
-    overflow: scroll;
+    overflow: auto;
 }
 
 .menu__item {
@@ -333,9 +333,7 @@ aside {
     font-weight: 600;
     text-decoration: none;
 }
-.menu__box li:nth-child(8) {
-    padding-bottom: 100px;
-}
+
 .menu__item:hover {
     background-color: #CFD8DC;
 }
