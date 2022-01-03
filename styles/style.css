@@ -227,9 +227,7 @@ header {
     flex: 0 0 40%;
 }
 
-.menu {
-    flex: 0 0 0;
-}
+
 
 .photo img {
     width: 330px;
@@ -270,6 +268,11 @@ aside {
 .rs-logo {
     width: 100px;
     display: inline-block;
+}
+
+
+.menu {
+    flex: 0 0 0;
 }
 
 #menu__toggle {
@@ -333,7 +336,9 @@ aside {
     font-weight: 600;
     text-decoration: none;
 }
-
+.menu__box li:nth-child(8) {
+    padding-bottom: 100px;
+}
 .menu__item:hover {
     background-color: #CFD8DC;
 }
